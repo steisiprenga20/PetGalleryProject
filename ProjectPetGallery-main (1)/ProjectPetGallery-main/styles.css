@@ -1,0 +1,289 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('images/sfond.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+}
+
+
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8); 
+  border-radius: 10px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+header h1 {
+  font-size: 3.5em;
+  color: #194510; 
+  font-family: 'Pacifico', cursive; 
+  text-shadow: 2px 2px #000; 
+}
+header h2 {
+  font-size: 1.8em;
+  color: #4aa557; 
+  font-family: 'Roboto', sans-serif; 
+  text-shadow: 1px 1px #000; 
+}
+
+
+#search {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#search-bar {
+  width: 60%;
+  padding: 10px;
+  font-size: 1.2em;
+  border: 2px solid #4caf50;
+  border-radius: 5px;
+}
+
+#pet-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.pet-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.pet-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.pet-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.pet-card h3 {
+  margin: 0;
+  padding: 15px;
+  font-size: 1.2em;
+  color: #2e7d32;
+}
+
+.info-section {
+  background: #f1f8e9;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+
+.info-section h2 {
+  color: #2e7d32;
+}
+
+.info-section p {
+  font-size: 1.1em;
+  color: #4caf50;
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.floating-nav {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 1000;
+}
+
+.floating-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.floating-nav ul li {
+  margin: 10px 0;
+}
+
+.floating-nav ul li a {
+  text-decoration: none;
+  color: #2e7d32;
+  font-size: 1.1em;
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+.floating-nav ul li a:hover,
+.floating-nav ul li a.active {
+  color: #4caf50;
+  text-decoration: underline;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.3s ease;
+}
+
+.modal-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(44, 133, 44);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#modal-body {
+  text-align: center;
+}
+
+#modal-body img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+#modal-body h3 {
+  font-size: 2em;
+  color: #2e7d32;
+  margin: 20px 0 10px;
+}
+
+#modal-body p {
+  font-size: 1.2em;
+  color: #4caf50;
+}
+/* Default styles for mobile devices */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('images/sfond.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+}
+
+.container {
+  max-width: 100%;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.8); 
+  border-radius: 10px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  color: #194510; 
+  font-family: 'Pacifico', cursive; 
+  text-shadow: 2px 2px #000; 
+}
+
+header h2 {
+  font-size: 1.5em;
+  color: #4aa557; 
+  font-family: 'Roboto', sans-serif; 
+  text-shadow: 1px 1px #000; 
+}
+
+#search-bar {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.2em;
+  border: 2px solid #4caf50;
+  border-radius: 5px;
+}
+
+.pet-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.floating-nav {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 1000;
+}
+
+/* Desktop styles */
+@media (min-width: 768px) {
+  .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+  }
+
+  header h1 {
+      font-size: 3.5em;
+  }
+
+  header h2 {
+      font-size: 1.8em;
+  }
+
+  .pet-card {
+      width: 30%;
+      margin-right: 20px;
+  }
+
+  .info-section {
+      margin: 20px 0;
+  }
+
+  .floating-nav {
+      bottom: 20px;
+      right: 20px;
+  }
+}
